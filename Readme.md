@@ -1,6 +1,31 @@
-## Javascript simple problemd solving
+# Javascript simple problemd solving
 
-# Problem-1. Create An Array Of Objects Representing Books With Properties Like Title, Author, And Year. Write A Function That Takes The Array And Returns A New Array With Only The Book Titles. Print The Result.
+### Leap Year Checker
+
+- Answer 
+```
+const isLeapYear = (value) => {
+  if (value % 4 !== 0) {
+    return false;
+  } else if (value % 100 !== 0) {
+    return true;
+  } else if (value % 400 !== 0) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
+console.log(isLeapYear(2024))
+
+// result: true
+```
+
+
+
+
+
+### Problem-1. Create An Array Of Objects Representing Books With Properties Like Title, Author, And Year. Write A Function That Takes The Array And Returns A New Array With Only The Book Titles. Print The Result.
 
 - Answer 
 ```
@@ -11,7 +36,7 @@ const getBooksTitle = () => {
 
 * The books is an Array with those property.
 ```
-# Problem-2. Create An Array Of Objects Representing Cars With Properties Like Make, Model, And Year. Write A Function To Sort The Array Of Cars By The Year Of Manufacture In Ascending Order. Print The Sorted Array.
+### Problem-2. Create An Array Of Objects Representing Cars With Properties Like Make, Model, And Year. Write A Function To Sort The Array Of Cars By The Year Of Manufacture In Ascending Order. Print The Sorted Array.
 
 - Answer 
 ```
