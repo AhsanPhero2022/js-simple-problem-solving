@@ -54,3 +54,26 @@ const getManufacturedYear = () => {
 };
 
 ```
+
+### Problem-3. Write A Function That Takes An Array Of Numbers And Returns The Maximum Value.
+
+- Answer
+
+```
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 500];
+
+
+const  findMaxValue= () => {
+    if (numbers.length === 0) {
+        throw new Error('Array is empty');
+    }
+    const result = numbers.reduce((max, current) => (current > max ? current : max), numbers[0]);
+    return result;
+}
+
+console.log(findMaxValue())
+// result 500
+
+```
+

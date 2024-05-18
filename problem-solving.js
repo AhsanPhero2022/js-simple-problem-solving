@@ -76,3 +76,4 @@ const  findMaxValue= () => {
     return result;
 }
 
+console.log(findMaxValue())
